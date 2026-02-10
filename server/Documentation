@@ -1,0 +1,67 @@
+/*-----------------DOCUMENTATION-----------------------------------------------
+Name          : Dheeraj H K
+Starting date : 20/01/2026
+Ending date   : 05/02/2026
+
+Project Title : TFTP Client-Server Application in C (Linux)
+
+Description:
+
+This project is an implementation of a Trivial File Transfer Protocol (TFTP)
+client and server using C and Linux socket programming. TFTP is a simple,
+UDP-based file transfer protocol commonly used for transferring files in
+embedded systems and network devices.
+
+The project allows the user to:
+
+-> Upload files from client to server (PUT)
+-> Download files from server to client (GET)
+-> Handle file not found and access errors
+-> Transfer data in fixed-size blocks (512 bytes)
+-> Acknowledge each block for reliable transfer
+-> Support multiple client requests (sequential handling)
+
+The project is developed using:
+
+-> UDP sockets
+-> File I/O system calls
+-> Network programming concepts
+-> Error handling and timeout management
+
+This project demonstrates:
+
+-> Client-server communication
+-> Reliable data transfer over UDP
+-> Socket programming using sendto() and recvfrom()
+-> File handling and block-based transmission
+
+Sample Input and Output:
+
+Execution:
+
+Input:
+Server:
+./tftp_server
+
+Client:
+./tftp_client
+
+Output:
+
+===============================START===================================
+TFTP Server started on port 6969
+
+Client:
+TFTP$ get test.txt
+Receiving file...
+Transfer complete.
+
+TFTP$ put upload.txt
+Sending file...
+Transfer complete.
+
+TFTP$ get wrong.txt
+ERROR : File not found
+
+================================END====================================
+---------------------------------------------------------------------------*/
